@@ -16,11 +16,15 @@ In the frontend (**client folder**), the files which need editing are all under 
 
     The six components in the components folder: **about, carousel, carousel-card, search, track-list, and thermometer**. Each component folder contains four files (** *.component.css, *.component.html, *.component.ts , *.component.spec.ts**). Of these files, all edits will be made in the .component.html and .component.ts files.
 
+    
     Three of the four components in the pages folder: **album-page, artist-page, and track-page. home-page** will not be edited. Again, all edits will be made in the       **.component.html and .component.ts files.**
 
+    
     The one service in the services folder: spotify-service. All edits will be made in the **.service.ts** file, none in the **.service.spec.ts** file.
 
+    
     One of the six classes in the data folder: **track-features.ts.** The four other classes do not need to be edited.
+    
 
 You will also edit the readme.txt file in the root folder.
 
