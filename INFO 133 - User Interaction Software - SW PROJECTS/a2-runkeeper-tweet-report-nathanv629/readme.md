@@ -1,4 +1,4 @@
-# Readme document for RunKeeper Tweet Report#
+# Readme document for RunKeeper Tweet Report
 
 It’s also recommended that you add the **--watch** flag so your code automatically re-compiles. 
 This code will create the JavaScript version of the Tweet class in js/tweet.js.
