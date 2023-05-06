@@ -1,11 +1,12 @@
-Readme document for **Hand gesture Dating app** 
+--Readme document for **Hand gesture Dating app** 
 
 **Repository Structure**
+
 The repository contains a fairly standard Angular web framework project. It contains a home page and one custom component that enables gestural control through a hand tracking library called Handtrack.js. Handtrack.js is a library built on top of the machine learning platform TensorFlow. We have abstracted most of the complexity with Handtrack.js into a component that emits hand gesture events detected from a webcam.
 
 To get started with the starter repository, you will first need to run:
 
-**npm install**
+  **npm install**
 
 from the command line. You may want to add variables and functions to these files, or create new subclasses. They are:
 
@@ -20,4 +21,4 @@ If you plan on building upon the start repository, you will likely want to creat
 **Setting up your Workspace**
 The workspace for the starter repository will be identical to the workspace you set up for A3. Once you have installed the required modules, run:
 
-**ng serve --open**
+  **ng serve --open**
