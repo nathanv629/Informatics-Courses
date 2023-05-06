@@ -2,7 +2,7 @@
 
 **Repository Structure**
 
-The repository contains somewhere around 80 files. You will not need to edit most of them in this assignment. The repository contains two folders: **webserver** and **client.webserver** includes the Express/Node.js backend for communicating with the Spotify API. client includes the Angular frontend for browsing music.
+The repository contains somewhere around 80 files. The repository contains two folders: **webserver** and **client.webserver** includes the Express/Node.js backend for communicating with the Spotify API. client includes the Angular frontend for browsing music.
 
 In the backend (**webserver** folder), you will not need to edit any of the JavaScript files; they are provided for you. However, you do need to create two files:
 
