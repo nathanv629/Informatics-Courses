@@ -22,4 +22,4 @@ If you plan on building upon the start repository, you will likely want to creat
 
 The workspace for the starter repository will be identical to the workspace you set up for A3. Once you have installed the required modules, run:
 
-  **ng serve --open**
+ **ng serve --open**
