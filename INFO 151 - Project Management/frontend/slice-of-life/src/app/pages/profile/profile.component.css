@@ -1,0 +1,48 @@
+.profile {
+    text-align: center;
+    position: absolute;
+    top: 3%;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
+
+.spinner {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    right: 50%;
+}
+
+.card {
+    max-width: 500px;
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.header {
+    display: inline;
+}
+
+.header-title {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.header-subtitle-name {
+    font-size: 23px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.header-subtitle-selections {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header-search-bar {
+    text-align: center;
+}

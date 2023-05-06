@@ -1,0 +1,33 @@
+<mat-card class="card">
+  <mat-card-header>
+    <div
+      mat-card-avatar
+      class="example-header-image"
+      [ngStyle]="{
+        'background-image': 'url(' + post.posted_by.profile_pic + ')'
+      }"
+    ></div>
+    <mat-card-title>@{{ post.posted_by.handle }}</mat-card-title>
+    <mat-card-subtitle
+      >Completed {{ post.completes.title }} {{ calcTime() }}.</mat-card-subtitle
+    >
+  </mat-card-header>
+  <img mat-card-image [src]="post.image" alt="" />
+  <mat-card-content>
+    <p>
+      {{ post.free_text }}
+    </p>
+    <p><b>Task:</b> {{ post.completes.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button class="btn"><mat-icon>thumb_up</mat-icon> LIKE</button>
+    <button mat-button class="btn" (click)="openComments()"> <mat-icon>comment</mat-icon>COMMENT</button>
+    <button mat-button class="btn"><mat-icon>share</mat-icon> SHARE</button>
+  </mat-card-actions>
+  <div *ngIf="showComments && this.thread">
+    <hr>
+    <mat-card-footer >
+      <thread [threads]="this.thread"></thread>
+    </mat-card-footer>
+  </div>
+</mat-card>

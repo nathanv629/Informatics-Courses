@@ -1,0 +1,14 @@
+.camColumn {
+    float: left;
+    width: 30%;
+}
+
+.appColumn {
+    float: right;
+    width: 70%;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+}

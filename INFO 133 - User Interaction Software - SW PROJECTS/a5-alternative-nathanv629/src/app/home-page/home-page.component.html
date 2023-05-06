@@ -1,0 +1,15 @@
+<div class="row justify-content-center">
+    <div class="camColumn ">
+        <app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+        <div [innerHTML]="gesture"></div>
+        <p>Closed Hand - Dislike</p>
+        <p>Open Hand = Like</p>
+        <p>Two Open Hands - Super Like</p>
+        <p>Hand Pointing - Share</p>
+        <p>Hand Pinching - NEXT</p>
+        <p>Two Hands Closed - BACK</p>
+    </div>
+    <div>
+        <app-profile-card [gesture]="gesture"></app-profile-card>
+    </div>
+</div>

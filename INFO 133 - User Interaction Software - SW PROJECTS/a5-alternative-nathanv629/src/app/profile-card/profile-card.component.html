@@ -1,0 +1,27 @@
+<div style="max-width: 400px; text-align: center; margin:auto; padding: 1em; border:1px solid black;">
+    <mat-card class="center-items">
+        <mat-card-header>
+            <mat-card-title class="title">{{name}} - {{age}}</mat-card-title>
+            <mat-card-subtitle class="subtitle">{{gender}} from {{country}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="pic" alt="user photo">
+        <div style="text-align: center;">
+            <button (click)="backward()" class="alt-button" mat-button>BACK</button>
+            <button (click)="updateInfo()" class="alt-button" mat-button>NEXT</button>
+        </div>
+        <div style="align-items: center;">
+            <button class="button" mat-button>DISLIKE</button>
+            <button class="button" mat-button>LIKE</button>
+            <button class="button" mat-button>SUPER LIKE</button>
+            <button class="button" mat-button>SHARE</button>
+        </div>
+        <div *ngIf="onNext()"></div>
+        <div *ngIf="onBack()"></div>
+        <div *ngIf="toDo()"></div>
+    </mat-card>
+</div>
+<div
+    style="max-width: 200px; max-height: fit-content; text-align: center; margin:auto; padding: 1em; border:1px solid black;">
+    <p *ngIf="favorite=='Like' || favorite=='Dislike' || favorite=='Super Like' || favorite=='Share'">You {{favorite}}
+        {{name}}</p>
+</div>

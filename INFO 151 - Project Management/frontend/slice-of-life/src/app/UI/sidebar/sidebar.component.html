@@ -1,0 +1,22 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="sidebar" mode="side" disableClose opened>
+    <div class="sidebar-contents">
+      <mat-list>
+        <mat-list-item></mat-list-item>
+        <div class="mat-headline">Slice of Life</div>
+        <div class="mat-title">
+          <mat-list-item><button mat-icon-button><mat-icon>home</mat-icon></button><a href="#">Home</a></mat-list-item>
+          <mat-list-item><button mat-icon-button><mat-icon>feed</mat-icon></button><a href="#">Feed</a></mat-list-item>
+          <mat-list-item><button mat-icon-button><mat-icon>person</mat-icon></button><a routerLink="/profile-page"
+              routerLinkActive="active">Profile</a></mat-list-item>
+          <mat-list-item id="bottom"><button mat-icon-button><mat-icon>exit_to_app</mat-icon></button><a
+              href="#">Logout</a></mat-list-item>
+        </div>
+        <router-outlet></router-outlet>
+      </mat-list>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div><ng-content></ng-content></div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

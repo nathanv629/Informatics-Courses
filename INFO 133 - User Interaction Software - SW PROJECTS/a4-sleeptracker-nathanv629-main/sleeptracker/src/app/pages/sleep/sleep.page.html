@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-label>
+      Overnight Sleep Log
+    </ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col (click)="clearOnClick()" size="12" class="ion-text-center">
+          <ion-button fill="solid">Clear All</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  <ion-list>
+    <ion-card *ngFor="let card of cards" value={{card}}>
+      <ion-card-header class="ion-text-center">
+        <ion-card-subtitle>ID: {{card.id}}</ion-card-subtitle>
+        <ion-card-title>{{card.dateString()}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="ion-text-center">
+        {{card.hourDifference}}
+        {{card.memo}}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
+
+<ion-footer class="ion-text-center">
+  <ion-button routerLink="/home">
+    Home
+  </ion-button>
+  <ion-button routerLink="/sleep">
+    Sleep
+  </ion-button>
+  <ion-button routerLink="/sleepiness">
+    Sleepiness
+  </ion-button>
+</ion-footer>

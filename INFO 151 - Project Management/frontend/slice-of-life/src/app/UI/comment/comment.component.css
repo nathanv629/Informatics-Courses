@@ -1,0 +1,29 @@
+.example-header-image {
+    background-size: cover;
+  }
+.profile-pic {
+    vertical-align: text-top;
+}
+.parent {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+display: grid;
+grid-template-columns: 0.15fr;
+grid-template-rows: 1fr;
+grid-column-gap: 15px;
+
+}
+
+.response{
+    margin-left: 10%;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 5; }
+
+#viewReplies {
+    padding-left: 15px;
+}
+a {
+    color: gray;
+}

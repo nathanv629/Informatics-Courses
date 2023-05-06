@@ -1,0 +1,24 @@
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    font-size: 30px;
+    color: brown;
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+.button {
+    margin: 6px;
+}
+
+.alt-button {
+    margin-left: 10px;
+    margin-right: 10px;
+}

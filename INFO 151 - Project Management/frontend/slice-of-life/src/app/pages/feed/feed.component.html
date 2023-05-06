@@ -1,0 +1,8 @@
+<sidebar>
+  <div *ngIf="feed ; else loading" class="feed">
+    <post *ngFor="let post of feed.page" [post]="post"></post>
+  </div>
+  <ng-template #loading>
+    <mat-spinner class="spinner"></mat-spinner>
+  </ng-template>
+</sidebar>

@@ -1,0 +1,18 @@
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.mat-card-footer {
+  padding-bottom: 15px;
+}
+.mat-card-actions {
+  margin: 0 auto;
+  text-align: center
+}
