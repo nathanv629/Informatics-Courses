@@ -36,7 +36,7 @@ If you’re feeling unfamiliar with the command line, you might find the guides 
 
 Some of the packages/libraries depend on newer versions of Node JS. Check what version of Node JS you have installed with:
 
-    **node --version**
+    node --version
     
 If you installed Node JS before this class, make sure you’ve updated to at least 10, such as with nvm or downloading the latest version from the node website. If you installed Node during A2, you should not need to update, but it’s probably worth checking the version number anyways.
 
@@ -44,13 +44,13 @@ There are no global dependencies required to run the Express webserver.
 
 For the client, you will need to install Angular through npm. To do this, you will install the Angular Command Line Interface (CLI) globally with:
 
-    **npm install -g @angular/cli **
+    npm install -g @angular/cli 
     
 The Angular project is already set up in the client folder, but the CLI is necessary to run the project.
 
 You will also need to install the dependencies for both the webserver and the client. These dependencies are defined in each project’s respective package.json files. cd into each respective project’s folder and install the dependencies with:
 
-    **npm install**
+    npm install
     
 You may encounter a few installation warnings or high severity security vulnerabilities. We will ignore them for this assignment, but these should typically be addressed when using libraries.
 
@@ -60,7 +60,7 @@ You may get a warning that the version of Angular that you have installed is new
 
 It’s likely that your project code will have out of date dependencies, so before you move to the next section, cd into both the client and webserver directories and run the following command:
 
-    **npm update**
+    npm update
     
 **Running the Webserver**
 
@@ -72,42 +72,42 @@ Indicate that you are building a Website and are not developing a commercial app
 
 Once you have created your application, be sure to set the redirect URI to:
 
-    **http://localhost:8888/callback**
+    http://localhost:8888/callback
     
 This will tell Spotify to redirect back to our Express webserver once authentication and authorization is complete. You should also create a file in the webserver folder (not the routes folder), client_secret.json, with your consumer key and secret. It should be of the form:
 
-    **{**
-     **"client_id": "Your Client Key",**
-     **"client_secret": "Your Client Secret"**
-    **}**
+    {
+     "client_id": "Your Client Key",
+     "client_secret": "Your Client Secret"
+    }
 
 At this time, also create a placeholder file in the same folder for tokens.json. This file will be overwritten once an access and refresh token have been retrieved. Your tokens.json file should be exactly:
 
-    **{**
-     **"access_token": null,**
-     **"refresh_token": null**
-    **}**
+    {
+     "access_token": null,
+     "refresh_token": null
+    }
     
 To run the Express webserver, cd into the webserver folder and run: npm start
 
 This will start the webserver at:
 
-    **localhost:8888**
-    
+    localhost:8888
+   
 Be sure the dependencies have been installed first via:
 
-    **npm install**
+    npm install
     
 If you make a change to code in the webserver (which you should not need to do to complete the required portions of this assignment), you will have to end the running program and re-run it. End it by typing Ctrl-C into the command line and then re-running it with:
 
-    **npm start**
+    npm start
     
 **Running the client**
 
 To run the Angular client, cd into the client folder and run:
 
-    **ng serve --open**
-    **NOTE: '--open' is optional**
+    ng serve --open
+    NOTE: '--open' is optional
     
 This will start the client at **localhost:4200.** Adding the **--open** flag will open it up in the browser. Be sure the dependencies have been installed first via **npm install.**
 
