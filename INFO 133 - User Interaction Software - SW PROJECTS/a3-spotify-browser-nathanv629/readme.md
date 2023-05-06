@@ -1,4 +1,4 @@
-#Readme document for **Spotify Browser in Angular**
+# Readme document for **Spotify Browser in Angular**
 
 **Repository Structure**
 
