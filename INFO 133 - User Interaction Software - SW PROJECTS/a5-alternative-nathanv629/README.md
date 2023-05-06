@@ -1,4 +1,4 @@
-Readme document for **Hand gesture Dating app** 
+# Hand gesture Dating app
 
 **Repository Structure**
 
