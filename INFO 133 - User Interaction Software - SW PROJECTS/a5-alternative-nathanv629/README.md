@@ -1,4 +1,4 @@
---Readme document for **Hand gesture Dating app** 
+Readme document for **Hand gesture Dating app** 
 
 **Repository Structure**
 
@@ -19,6 +19,7 @@ One component in the app folder: home-page. This component is demonstrates how t
 If you plan on building upon the start repository, you will likely want to create additional components, pages, or services to build your app using ng generate. You should be familiar with these commands by now, so we will not cover them in anymore detail here.
 
 **Setting up your Workspace**
+
 The workspace for the starter repository will be identical to the workspace you set up for A3. Once you have installed the required modules, run:
 
   **ng serve --open**
