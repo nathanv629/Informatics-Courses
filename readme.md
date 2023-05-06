@@ -1,3 +1,3 @@
-#Informatics-Courses
+# Informatics-Courses
 
-Informatics Coursework at UCI
+Informatics coursework at UCI
