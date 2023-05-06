@@ -19,6 +19,7 @@ will generate skeleton code for these files(documentation here). The decision on
 There is also a readme.txt file in the root folder. The readme is more important to this assignment than to previous ones, as it is required to include justifications of your design choices. More on this a little further down.
 
 **Setting up your Workspace**
+
 Some of the packages/libraries depend on newer versions of Node JS.
 
 Check what version of Node JS you have installed with:
@@ -38,6 +39,7 @@ The Ionic project is already set up in the sleeptracker folder, but the CLI is n
 When installing, if you run into issues which contain messages similar to “permission denied”, try changing the permissions of the node_modules directory. If you are still having trouble, ask on Zulip or talk to the course staff. It’s important to try to get the setup working sooner rather than later, even if you do not plan on working on the assignment until close to the deadline.
 
 **Running the App**
+
 To run the Ionic app, cd into the sleeptracker folder and run:
 
     **ionic serve**
